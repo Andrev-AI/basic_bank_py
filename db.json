@@ -1,0 +1,25 @@
+{
+    "clientes": [
+        {
+            "id": 1,
+            "name": "André Moura Santos",
+            "cpf": "12345678912",
+            "email": "andremourasantos3@gmail.com",
+            "phone": "5562998452639",
+            "registration_date": "2025-03-02 14:28:45"
+        }
+    ],
+    "contas": [
+        {
+            "id": 1,
+            "client_id": 1,
+            "account_number": 25557,
+            "account_type": "Checking",
+            "balance": 0.0,
+            "opening_date": "2025-03-02 14:28:45",
+            "status": "Active",
+            "password": "123456789"
+        }
+    ],
+    "transacoes": []
+}
