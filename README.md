@@ -1,6 +1,80 @@
-# Sistema Bancário em Python aBank
-Version in [🇺🇸 English](#english)
+Version in [🇺🇸 English](#english) and [🇧🇷 Português](#português)
 
+## 🇺🇸 English
+# ENGLISH VERSION: Python Banking System aBank:
+
+This is a simple banking system developed in Python using Object-Oriented Programming (OOP). The project simulates a basic banking system with functionalities like account creation, deposit, withdrawal, and transfers between accounts.
+
+## Functionalities
+* Creation of bank accounts
+
+* Deposit of values
+
+* Withdrawal of values with balance verification
+
+* Transfer of values between accounts
+
+* Terminal-based interaction interface
+
+## Project Structure
+The project is divided into the following files:
+
+* `main.py` - The entire bank system is in this file. It contains verification functions and a handcrafted DBMS in Python. This would be the "backend."
+
+* `interface.py` - User interaction interface to perform bank operations. It is interconnected with main.py to access functions. This would be the "frontend" of the application.
+
+* `db.json` The system's database.
+
+  * `cliente = []` customer information.
+
+    * `id` a numeric sequential ID of the account for control.
+
+    * `name`, `cpf`, `email`, `phone`, `password` personal data.
+
+    * `registration_date` creation date and time.
+
+   * `conta = []` the account related to the customer.
+
+     * `id` ID related to the created account.
+
+     * `client_id` identifies which customer this account is linked to. It receives the customer's id in cliente = [].
+  
+     * `account_number` account number, used for control and transactions like transfers.
+  
+     * `account_type` checks the type of account, whether it's a checking account, savings, investments, etc.
+  
+     * `balance`
+  
+     * `opening_date` creation date and time.
+     
+     * `status` checks the account status—whether it's active, valid, invalid, etc.
+     
+     * `password` account password.
+   
+   * `transacoes = []` transaction history related to each customer.
+
+## Objective and Motivation:
+Python was the first language I learned and studied. I took a break from developing projects with it but was always fascinated by systems. So, I decided to create a banking system. I researched a bit about how it works, especially the database, and decided to apply that knowledge. It was good to see that my logic and knowledge hadn’t faded. This is the second attempt because I created a more comprehensive system earlier (a day before creating this one). I would develop the system, analyze it, and see where improvements could be made, where to implement features, and gradually increase the system's level and complexity. Then, I decided to rewrite it, this time thinking of it as a portfolio to publish. I incorporated a lot of the logic from the first version into this one, but this time the system was written in English. However, I decided to keep the database in Portuguese. It took me one day to create this system, though not continuously, as I would take breaks, do other things, and then return to it. I estimate it took around six hours without breaks. I intend to release a version using an SQL database and a hosted API—a system with better and more advanced validation (at a senior developer level), and I might create such a system in React. I won’t be publishing the first version of my system.
+
+## How to Run
+* Make sure you have Python installed (version 3.6 or higher).
+
+* Clone this repository or download the files.
+
+* In the terminal, navigate to the project folder and run the file `interface.py`
+
+Follow the instructions displayed in the terminal interface.
+
+## Requirements
+Python 3.6+
+
+## Contribution
+If you would like to contribute improvements to the project, you can fork the repository and submit your changes.
+
+## License
+Feel free to use and modify it as needed.
+
+# Sistema Bancário em Python aBank (PT-BR)
 Este é um sistema bancário simples desenvolvido em Python, utilizando Programação Orientada a Objetos (POO). O projeto simula um sistema bancário básico com funcionalidades como criação de conta, depósito, saque e transferências entre contas.
 
 ## Funcionalidades
@@ -58,7 +132,7 @@ o arquivo `interface.py`
 
 Siga as instruções exibidas na interface do terminal.
 
-Requisitos
+## Requisitos
 
 Python 3.6+
 
@@ -69,79 +143,3 @@ Se desejar contribuir com melhorias para o projeto, pode fazer um fork do reposi
 ## Licença
 
 Sinta-se livre para usá-lo e modificá-lo conforme necessário.
-
-## 🇺🇸 English
-# ENGLISH VERSION: Python Banking System aBank:
-
-This is a simple banking system developed in Python using Object-Oriented Programming (OOP). The project simulates a basic banking system with functionalities like account creation, deposit, withdrawal, and transfers between accounts.
-
-Functionalities
-Creation of bank accounts
-
-Deposit of values
-
-Withdrawal of values with balance verification
-
-Transfer of values between accounts
-
-Terminal-based interaction interface
-
-Project Structure
-The project is divided into the following files:
-
-main.py - The entire bank system is in this file. It contains verification functions and a handcrafted DBMS in Python. This would be the "backend."
-
-interface.py - User interaction interface to perform bank operations. It is interconnected with main.py to access functions. This would be the "frontend" of the application.
-
-db.json The system's database.
-
-cliente = [] customer information.
-
-id a numeric sequential ID of the account for control.
-
-name, cpf, email, phone, password personal data.
-
-registration_date creation date and time.
-
-conta = [] the account related to the customer.
-
-id ID related to the created account.
-
-client_id identifies which customer this account is linked to. It receives the customer's id in cliente = [].
-
-account_number account number, used for control and transactions like transfers.
-
-account_type checks the type of account, whether it's a checking account, savings, investments, etc.
-
-balance balance.
-
-opening_date creation date and time.
-
-status checks the account status—whether it's active, valid, invalid, etc.
-
-password account password.
-
-transacoes = [] transaction history related to each customer.
-
-Objective and Motivation:
-Python was the first language I learned and studied. I took a break from developing projects with it but was always fascinated by systems. So, I decided to create a banking system. I researched a bit about how it works, especially the database, and decided to apply that knowledge. It was good to see that my logic and knowledge hadn’t faded. This is the second attempt because I created a more comprehensive system earlier (a day before creating this one). I would develop the system, analyze it, and see where improvements could be made, where to implement features, and gradually increase the system's level and complexity. Then, I decided to rewrite it, this time thinking of it as a portfolio to publish. I incorporated a lot of the logic from the first version into this one, but this time the system was written in English. However, I decided to keep the database in Portuguese. It took me one day to create this system, though not continuously, as I would take breaks, do other things, and then return to it. I estimate it took around six hours without breaks. I intend to release a version using an SQL database and a hosted API—a system with better and more advanced validation (at a senior developer level), and I might create such a system in React. I won’t be publishing the first version of my system.
-
-How to Run
-Make sure you have Python installed (version 3.6 or higher).
-
-Clone this repository or download the files.
-
-In the terminal, navigate to the project folder and run:
-
-The file interface.py python interface.py
-
-Follow the instructions displayed in the terminal interface.
-
-Requirements
-Python 3.6+
-
-Contribution
-If you would like to contribute improvements to the project, you can fork the repository and submit your changes.
-
-License
-Feel free to use and modify it as needed.
